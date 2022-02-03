@@ -6,7 +6,10 @@ This repository is a clear-cut guide to customize gnome desktop.
 > download and paste the theme folder in ``` ~/.themes``` . (except Qogir, find installation process of Qogir below)
 
 
-1. [Qogir-dark](https://github.com/vinceliuice/Qogir-theme)
+1. [Qogir-dark](https://github.com/vinceliuice/Qogir-theme) // visit how install this theme [below](#install Qogir theme)
+2. [layan-dark](https://www.gnome-look.org/p/1309214/)
+3. [nordic-darker-40](https://www.gnome-look.org/p/1267246/)
+
 ### install Qogir theme
 > dowload the ropo as zip and extract it.
 > open the terminal in ```Qogir-theme``` folder. 
@@ -19,10 +22,6 @@ gsettings set org.gnome.desktop.wm.preferences button-layout appmenu:minimize,ma
 put the os name of your choice at the place of  `manjaro`.
 
 > Now open/reopen gnome-tweeks and set Qogir/Qogir-dark/Qogit-light theme from the list.  
-
-2. [layan-dark](https://www.gnome-look.org/p/1309214/)
-3. [nordic-darker-40](https://www.gnome-look.org/p/1267246/)
-
 
 
 ## icon themes for gnome
