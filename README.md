@@ -81,14 +81,14 @@ cp ulauncher.desktop ~/.config/autostart/
   1. Open the preferences
   2. Switch to the *Font & Colors* tab
   3. Click on the *+* labeled button on the left bottom
-  4. Import the fevourite .xml file from color_schema folder.
+  4. Import the fevourite .xml file from [color_schema](color_schema) folder.
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
 ## wallpapers
-set wallpaper as your choice
-*you can a consider given some wallpaper here in wallpapers folder.
+set wallpaper as your choice<br>
+*you can a consider given some wallpaper here in [wallpapers](wallpapers) folder.
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
