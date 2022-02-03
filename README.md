@@ -1,9 +1,12 @@
 # customization for gnome desktop environment
 This repository is a clear-cut guide to customize gnome desktop.
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## themes for gnome
 > notice : install themes in ~/.themes. if not exists create)
 > download and paste the theme folder in ``` ~/.themes``` . (except Qogir, find installation process of Qogir below)
+
 
 
 1. [Qogir-dark](https://github.com/vinceliuice/Qogir-theme) // visit how install this theme [below](#install-qogir-theme)
@@ -23,6 +26,8 @@ put the os name of your choice at the place of  `manjaro`.
 
 > Now open/reopen gnome-tweeks and set Qogir/Qogir-dark/Qogit-light theme from the list.  
 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## icon themes for gnome
 > notice : install themes in ~/.themes. if not exists create)
@@ -31,6 +36,9 @@ put the os name of your choice at the place of  `manjaro`.
 2. [candy-icons](https://www.gnome-look.org/p/1305251)
 3. [papirus](https://www.gnome-look.org/p/1166289)
 4. [bigsur] (https://www.gnome-look.org/p/1399044/)
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## install and setup ulauncher
 ulauncher is quick application launcher. search and open inatalled application with some keyboard key press.
@@ -49,6 +57,8 @@ cp ulauncher.desktop ~/.config/autostart/
 1. Open Settings > Keyboard (may be named "Keyboard Shortcuts"), then scroll down to Customize Shortcuts > Custom Shortcuts > +
 2. In Command enter ulauncher-toggle, set name and shortcut, then click Add
 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 
 
@@ -61,6 +71,8 @@ cp ulauncher.desktop ~/.config/autostart/
 1. [nord Theme](https://github.com/KiranWells/ulauncher-nord/)
 2. [orchis](https://github.com/kleber-swf/orchis-dark-ulauncher)
 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## theme for gedit
 1. vsdark
@@ -71,10 +83,15 @@ cp ulauncher.desktop ~/.config/autostart/
   3. Click on the *+* labeled button on the left bottom
   4. Import the fevourite .xml file from color_schema folder.
 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## wallpapers
 set wallpaper as your choice
 *you can a consider given some wallpaper here in wallpapers folder.
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ## Extentions
 ### install extentions from gnome-look.org
