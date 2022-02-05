@@ -105,7 +105,12 @@ set wallpaper as your choice<br>
 5. dash to panel // if dash to dock is disabled.
 
 
-
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+### snapshot of final result
+<img src="static/shell.png" width="100%" height="auto">
+<p>&nbsp;</p>
+<img src="static/desktop.png" width="100%" height="auto">
 
 
 
