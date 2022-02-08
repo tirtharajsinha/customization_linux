@@ -11,7 +11,8 @@ This repository is a clear-cut guide to customize gnome desktop.
 
 1. [Qogir-dark](https://github.com/vinceliuice/Qogir-theme) // visit how install this theme [below](#install-qogir-theme)
 2. [layan-dark](https://www.gnome-look.org/p/1309214/)
-3. [nordic-darker-40](https://www.gnome-look.org/p/1267246/)
+3. [Orchis-dark](https://https://github.com/vinceliuice/Orchis-theme)
+4. [nordic-darker-40](https://www.gnome-look.org/p/1267246/)
 
 ### install Qogir theme
 > dowload the ropo as zip and extract it.
