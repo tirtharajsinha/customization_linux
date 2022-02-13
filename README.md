@@ -94,6 +94,24 @@ set wallpaper as your choice<br>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
+# terminal prompt (oh my posh)
+```
+sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+sudo chmod +x /usr/local/bin/oh-my-posh
+
+mkdir ~/.poshthemes
+wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/themes.zip -O ~/.poshthemes/themes.zip
+unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
+chmod u+rw ~/.poshthemes/*.json
+rm ~/.poshthemes/themes.zip
+```
+now copy all the .opm.json files from [oh-my-posh-themes](oh-my-posh-themes) directory from this repo to ```~/.poshthemes" directory.<br>
+Now paste the line below at the end of the file ``` ~/.bashrc ```.
+```
+eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/blueish.omp.json)"
+```
+> Change the blueish with your choice of themes
+
 ## Extentions
 ### install extentions from gnome-look.org
 1. blur my shell
