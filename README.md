@@ -94,6 +94,20 @@ set wallpaper as your choice<br>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
+# simple terminal prompt
+> Add these below lines in ```~/.bashrc```
+```
+_GREEN=$(tput setaf 2)
+_BLUE=$(tput setaf 4)
+_RED=$(tput setaf 1)
+_RESET=$(tput sgr0)
+_BOLD=$(tput bold)
+_CYAN=$(tput setaf 6)
+_WHITE=$(tput setaf 7)
+
+PS1="[\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[${_BOLD}${_CYAN}\]\u\[${_WHITE}\]@\[${_GREEN}\]\h\[\033[00m\]\[${_WHITE}${_RED}\] \w\[${_RESET}\]]\$ "
+```
+
 # terminal prompt (oh my posh)
 ```
 sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
