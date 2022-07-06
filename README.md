@@ -1,5 +1,5 @@
-# customization for gnome desktop environment
-This repository is a clear-cut guide to customize gnome desktop.
+# customization for desktop environment
+This repository is a clear-cut guide to customize any desktop and improve workflow.
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
@@ -30,13 +30,30 @@ put the os name of your choice at the place of  `manjaro`.
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-## icon themes for gnome
+## icon themes
 > notice : install themes in ~/.themes. if not exists create)
 > download and paste the icon-theme folder in ``` ~/.icons``` . 
 1. [deepinIcons 2022](https://www.gnome-look.org/p/1678986)
 2. [candy-icons](https://www.gnome-look.org/p/1305251)
 3. [papirus](https://www.gnome-look.org/p/1166289)
 4. [bigsur] (https://www.gnome-look.org/p/1399044/)
+5. tela
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+# themes for kde plasma
+> install kvantum theme of the same theme of your global theme.
+
+> install kvantum manager and install kvantum theme version of your theme.
+
+> change blur in desktop effects in system settings.
+
+1. layan-kde
+2. Colloid KDE
+3. orchis-kde
+4. whitesur-kde
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -137,19 +154,56 @@ eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/blueish.omp.json)"
    open arc menu settings and open misc open and import Nord_arcmenu_theme in menu theme presets and use it in menu theme. 
 5. dash to panel // if dash to dock is disabled.
 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+## install terminal icons.
+```
+sudo pacman -S lsd
+```
+> [View](https://github.com/Peltoche/lsd) other installation
+
+> install Nerd font and use in your terminal.
+
+Check your shell type(bash or zsh)
+Now paste the below snippet in your ```~/.bashrc``` or ```~/.zshrc``` at the end and save. 
+
+```
+alias ls='lsd'
+```
+> now open new tab or window of your fav terminal emulator and type  ```ls -l``` and hit enter now you can see some thing like that.
+
+<img src="static/lsd.png" width="500px" height="auto">
+
+
+## customize neofetch
+1. Inatall the neofetch
+2. copy the default config in a file. and remove the old config.
+   ```
+   cd ~/.config/neofetch
+   cp config.conf default.conf   
+   rm config.conf
+   ```
+3. now copy the config the ```config.conf ``` and paste inside the ```~/.config/neofetch``` directory.
+
+> consider [this repo](https://github.com/Chick2D/neofetch-themes) for more themes.
+
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-## snapshot of final result
-
+# snapshot
+## Manjaro gnome
 <img src="static/shell.png" width="100%" height="auto">
 <p>&nbsp;</p>
 <img src="static/desktop.png" width="100%" height="auto">
 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
+## manjaro kde-plasma
 
-
-
-
-
+<img src="static/desktopKde2.png" width="100%" height="auto">
+<p>&nbsp;</p>
+<img src="static/desktopKDE.png" width="100%" height="auto">
