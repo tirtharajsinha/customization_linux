@@ -136,12 +136,28 @@ unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
 chmod u+rw ~/.poshthemes/*.json
 rm ~/.poshthemes/themes.zip
 ```
-now copy all the .opm.json files from [oh-my-posh-themes](oh-my-posh-themes) directory from this repo to ```~/.poshthemes" directory.<br>
+
+Now copy all the .opm.json files from [oh-my-posh-themes](oh-my-posh-themes) directory from this repo to ```~/.poshthemes" directory.<br>
 Now paste the line below at the end of the file ``` ~/.bashrc ```.
 ```
 eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/blueish.omp.json)"
 ```
 > Change the blueish with your choice of themes
+
+
+# terminal Color Scheme(gogh)
+
+Select favourite Color scheme from [gogh-co.github.io/Gogh/](https://gogh-co.github.io/Gogh/)
+
+Now run the command 
+```
+bash -c  "$(wget -qO- https://git.io/vQgMr)" 
+```
+find your selected color scheme's serial number and enter it.
+
+Change prompt from terminal emulator preference.
+
+For more info visit [github.com/Gogh-Co/Gogh](https://github.com/Gogh-Co/Gogh)
 
 ## Extentions
 ### install extentions from gnome-look.org
