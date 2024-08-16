@@ -1,3 +1,18 @@
+command_not_found_handle() {
+# don't run if not in a container
+  if [ ! -e /run/.containerenv ] && [ ! -e /.dockerenv ]; then
+    exit 127
+  fi
+  
+  distrobox-host-exec "${@}"
+}
+if [ -n "${ZSH_VERSION-}" ]; then
+  command_not_found_handler() {
+    command_not_found_handle "$@"
+ }
+fi
+
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -29,11 +44,15 @@ source $ZSH/oh-my-zsh.sh
 # Added manually
 # ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
 
+if ! (env | grep -Fq 'DISTROBOX'); then
 eval "$(oh-my-posh init zsh --config ~/Developer/oh_my_posh_themes/3_shell.omp.json)"
-
+fi
 alias gdrive="google-drive-ocamlfuse ~/googledrive"
 alias nano="micro"
 alias sudo="sudo"
+
+
+
 
 function workon(){
         if [ -z "$1" ]
@@ -68,6 +87,7 @@ unset __conda_setup
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
+
 # eza config
 alias ls='eza --icons=always $@'                                                          # ls
 alias l='eza -lbF --git --icons=always $@'                                                # list, size, type, git
@@ -90,3 +110,5 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
 # switch group using `<` and `>`
 zstyle ':fzf-tab:*' switch-group '<' '>'
+
+
