@@ -46,7 +46,7 @@ source $ZSH/oh-my-zsh.sh
 # ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
 
 if ! (env | grep -Fq 'DISTROBOX'); then
-eval "$(oh-my-posh init zsh --config ~/Developer/oh_my_posh_themes/3_shell.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/Developer/oh-my-posh-themes/3_shell.omp.json)"
 fi
 alias gdrive="google-drive-ocamlfuse ~/googledrive"
 alias nano="micro"
@@ -59,10 +59,10 @@ function workon(){
         if [ -z "$1" ]
         then
               echo "Trying to activate venv ..."
-# source venv/bin/activate  # commented out by conda initialize
+              source ./venv/bin/activate  # commented out by conda initialize
         else
               echo "Trying to activate environment $1 ..."
-# source $1/bin/activate  # commented out by conda initialize
+              source ./$1/bin/activate  # commented out by conda initialize
         fi
 }
 
