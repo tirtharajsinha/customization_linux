@@ -21,7 +21,7 @@ export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME=""
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line if pasting URLs and other text is messed up.
@@ -51,7 +51,7 @@ fi
 alias gdrive="google-drive-ocamlfuse ~/googledrive"
 alias nano="micro"
 alias sudo="sudo"
-
+alias lsport="python /home/tirtha/.config/lsport/lsport.py"
 
 
 
