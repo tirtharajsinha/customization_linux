@@ -1,0 +1,19 @@
+# Background
+theme = Everblush
+background-opacity = 1
+background-blur-radius = 20
+bold-is-bright = true
+window-theme = "ghostty"
+adw-toolbar-style = "flat"
+gtk-tabs-location = "bottom"
+
+
+# Font 
+font-family = "RobotoMono Nerd Font"
+font-size = 12.5
+
+# Keybindings
+keybind = ctrl+c=copy_to_clipboard
+keybind = ctrl+v=paste_from_clipboard
+
+

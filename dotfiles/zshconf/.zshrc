@@ -1,3 +1,4 @@
+
  if (env | grep -Fq 'DISTROBOX'); then
 	 command_not_found_handle() {
 	 # don't run if not in a container
@@ -113,3 +114,24 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
 zstyle ':fzf-tab:*' switch-group '<' '>'
 
 
+export TERM=xterm-256color
+
+
+function init_oracledb(){
+podman run -d --name 23cfree \
+ -p 1521:1521 \
+ -e ORACLE_SID=FREE \
+ -e ORACLE_PDB=FREEPDB1 \
+ -e ORACLE_PWD=ora \
+ -e INIT_SGA_SIZE=2000 \
+ -e INIT_PGA_SIZE=500 \
+ -e ORACLE_EDITION=developer \
+ -e ENABLE_ARCHIVELOG=false \
+ -v OracleDBData:/opt/oracle/oradata \
+container-registry.oracle.com/database/free	
+}
+
+
+alias oracledb='podman start 23cfree'
+
+alias oracledb-stop='podman stop 23cfree'
