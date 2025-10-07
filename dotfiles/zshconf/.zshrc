@@ -47,13 +47,13 @@ source $ZSH/oh-my-zsh.sh
 # ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
 
 if ! (env | grep -Fq 'DISTROBOX'); then
-eval "$(oh-my-posh init zsh --config ~/Developer/oh-my-posh-themes/3_shell.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.poshthemes/3_shell.omp.json)"
 fi
-alias gdrive="google-drive-ocamlfuse ~/googledrive"
+
 alias nano="micro"
 alias sudo="sudo"
 alias lsport="python /home/tirtha/.config/lsport/lsport.py"
-
+alias ls="lsd"
 
 
 function workon(){
@@ -91,12 +91,12 @@ unset __conda_setup
 
 
 # eza config
-alias ls='eza --icons=always $@'                                                          # ls
-alias l='eza -lbF --git --icons=always $@'                                                # list, size, type, git
-alias ll='eza -lbGF --git --icons=always $@'                                             # long list
-alias llm='eza -lbGd --git --sort=modified --icons=always $@'                            # long list, modified date sort
-alias la='eza -lbhHigUmuSa --time-style=long-iso --git --color-scale --icons=always $@'  # all list
-alias lx='eza -lbhHigUmuSa@ --time-style=long-iso --git --color-scale --icons=always $@' # all + extended list
+# alias ls='eza --icons=always $@'                                                          # ls
+# alias l='eza -lbF --git --icons=always $@'                                                # list, size, type, git
+# alias ll='eza -lbGF --git --icons=always $@'                                             # long list
+# alias llm='eza -lbGd --git --sort=modified --icons=always $@'                            # long list, modified date sort
+# alias la='eza -lbhHigUmuSa --time-style=long-iso --git --color-scale --icons=always $@'  # all list
+# alias lx='eza -lbhHigUmuSa@ --time-style=long-iso --git --color-scale --icons=always $@' # all + extended list
 
 
 # disable sort when completing `git checkout`
@@ -109,7 +109,7 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # force zsh not to show completion menu, which allows fzf-tab to capture the unambiguous prefix
 zstyle ':completion:*' menu no
 # preview directory's content with eza when completing cd
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'lsd -1 --color=always $realpath'
 # switch group using `<` and `>`
 zstyle ':fzf-tab:*' switch-group '<' '>'
 
@@ -132,6 +132,6 @@ container-registry.oracle.com/database/free
 }
 
 
-alias oracledb='podman start 23cfree'
-
-alias oracledb-stop='podman stop 23cfree'
+# alias oracledb='podman start 23cfree'
+# 
+# alias oracledb-stop='podman stop 23cfree'
