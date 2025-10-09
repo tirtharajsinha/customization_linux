@@ -1,9 +1,32 @@
 import subprocess as sp
+
+
+def prompt_install_tabulate():
+	ans=input("Install LSPORT additional features [Y/n]")
+	if ans.lower()!='n':
+		print('Installation begins...')
+		resp = sp.run(['pip3', 'install','tabulate'])
+		if resp.returncode==0:
+			print('Installation Successfull')
+			return True
+			
+		else:
+			print('Installation Unsuccessful. Continueing without enhancment')
+			return False
+	else:
+		print('Continueing without enhancment')
+		return False
+		
+
 try:
 	from tabulate import tabulate
 	table=True
 except:
-	table=False
+	if prompt_install_tabulate():
+		from tabulate import tabulate
+		table=True
+	else:
+		table=False
 
 pipe = sp.Popen("ls -l /dev/serial/by-id/ | awk '{print $9 \" \" $11}'",shell=True, stdout=sp.PIPE, stderr=sp.PIPE)
 res = pipe.communicate()
