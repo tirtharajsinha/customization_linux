@@ -55,8 +55,8 @@ print()
 if table:
 	print (tabulate(data, headers=["Device Name", "Port"]))
 print()
-print(f"{len(ports)} Devices Found\n")
+print(f"{len(ports)} Serial Devices Found\n")
 
-print("If you don't see your device here, Then run lsusb -t to find the driver is install or not.")
+print("If you don't see your serial device here, Then run lsusb -t to find the driver is install or not.")
 
 
