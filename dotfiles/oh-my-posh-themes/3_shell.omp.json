@@ -63,7 +63,16 @@
             "display_host": true
           },
           "style": "diamond",
-          "template": "{{ if .SSHSession }}\ueba9 {{ end }}{{ .HostName }} ",
+          "template": "{{ if .SSHSession }}\ueba9 {{ end }} {{ .HostName }} ",
+          "type": "session"
+        },
+        {
+          "foreground": "p:yellow",
+          "properties": {
+            "display_host": true
+          },
+          "style": "diamond",
+          "template": "<p:white>by</> {{.UserName}} ",
           "type": "session"
         },
         {

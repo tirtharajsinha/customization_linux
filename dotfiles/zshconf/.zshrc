@@ -52,8 +52,12 @@ fi
 
 alias nano="micro"
 alias sudo="sudo"
+<<<<<<< HEAD
 alias lsport="python /home/tirtha/.config/lsport/lsport.py"
 alias ls="lsd"
+=======
+
+>>>>>>> 42ed8a7 (updating posh shell theme and removing legacy lsport)
 
 
 function workon(){
