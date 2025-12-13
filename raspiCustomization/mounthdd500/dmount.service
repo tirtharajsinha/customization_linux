@@ -1,0 +1,8 @@
+[Unit]
+Description=Mount my hard disk autometically when its available
+
+[Service]
+ExecStart=/usr/bin/python3 /home/tirthapi/.config/mounthdd500/mount.py
+
+[Install]
+WantedBy=multi-user.target

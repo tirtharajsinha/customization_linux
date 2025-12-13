@@ -1,0 +1,10 @@
+[Unit]
+Description=Headless raspberry pi Led event notifier
+
+[Service]
+ExecStart=/home/tirthapi/.config/piLedSignal/piLedSignal
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
