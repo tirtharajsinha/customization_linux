@@ -52,7 +52,6 @@ fi
 alias gdrive="google-drive-ocamlfuse ~/googledrive"
 alias nano="micro"
 alias sudo="sudo"
-alias lsport="python /home/tirtha/.config/lsport/lsport.py"
 
 
 
